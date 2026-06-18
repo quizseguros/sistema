@@ -113,3 +113,23 @@ Quando o usuário pedir skill nova:
 4. Se a skill precisar de arquivos de apoio (templates, exemplos),
    criar dentro da pasta da skill
 5. Seguir o fluxo da skill-creator nativa do Claude Code
+
+---
+
+## Sobre esse workspace
+
+Workspace da **Gvdesiigner** — marca de design e desenvolvimento de sites do
+Gabriel, que opera sozinho (perfil solopreneur/criador solo).
+
+**Estrutura de pastas:**
+- `_memoria/` — quem é o Gabriel, como ele fala, o que tá em foco
+- `identidade/` — cores, fontes, logo da própria Gvdesiigner
+- `clientes/<nome>/` — cada cliente tem pasta própria com `briefing.md` e
+  as entregas (ex: `clientes/systema-energia-solar/site/`)
+- `marketing/` — conteúdo, SEO, campanhas
+- `saidas/` — análises, emails, documentos pontuais
+- `dados/` — arquivos de entrada (briefings, imagens e brand kits de
+  clientes, planilhas pra analisar)
+- `scripts/` — utilitários
+
+Entrevista do `/instalar` ainda incompleta — ver nota em `_memoria/empresa.md`.

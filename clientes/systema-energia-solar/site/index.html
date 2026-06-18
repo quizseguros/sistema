@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Systema Energia Elétrica e Solar | Energia solar, elétrica e civil</title>
+<meta name="description" content="Projeto, instalação e manutenção de energia solar, engenharia elétrica e civil. Mais de 20 mil painéis instalados e 350 clientes atendidos.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Preloader / animação de entrada da logo -->
+<div id="preloader">
+  <img src="assets/logo.png" alt="Systema Energia Elétrica e Solar" id="preloader-logo">
+</div>
+
+<!-- Header -->
+<header id="header" class="site-header">
+  <div class="container header-inner">
+    <a href="#topo" class="logo-link">
+      <img src="assets/logo.png" alt="Systema Energia Elétrica e Solar" class="logo-img">
+    </a>
+    <nav class="main-nav">
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#faq">FAQ</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+    <a href="https://api.whatsapp.com/send?phone=5519971270736" target="_blank" rel="noopener" class="btn btn-whatsapp btn-nav">
+      <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 2.667c-7.36 0-13.333 5.973-13.333 13.333 0 2.6.74 5.027 2.04 7.107l-1.347 4.92 5.04-1.32c2 .987 4.267 1.547 6.6 1.547h.006c7.36 0 13.327-5.973 13.327-13.333 0-3.56-1.387-6.907-3.907-9.427-2.52-2.527-5.867-3.84-9.426-3.827zm7.78 19.013c-.327.92-1.92 1.76-2.64 1.867-.68.107-1.547.147-2.494-.16-.574-.187-1.307-.427-2.254-.84-3.96-1.707-6.547-5.667-6.747-5.933-.2-.267-1.627-2.16-1.627-4.12 0-1.96 1.027-2.92 1.387-3.32.36-.4.787-.493 1.054-.493.267 0 .533.003.767.013.247.013.58-.093.907.693.333.8 1.133 2.76 1.234 2.96.1.2.166.434.033.694-.133.26-.2.42-.4.647-.2.227-.42.507-.6.68-.2.193-.407.4-.174.787.233.387 1.04 1.707 2.227 2.76 1.527 1.36 2.814 1.78 3.214 1.98.4.2.633.173.867-.067.233-.24.994-1.16 1.26-1.56.267-.4.533-.333.894-.2.36.133 2.307 1.087 2.7 1.287.394.2.654.3.754.467.1.167.1.96-.227 1.88z"/></svg>
+      Fale no WhatsApp
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- Hero -->
+  <section class="hero section-dark shape-bg-section" id="hero">
+    <img src="assets/banner.png" alt="" class="hero-banner-img">
+    <div class="hero-overlay"></div>
+    <canvas class="shapegrid-canvas"></canvas>
+    <div class="container hero-inner">
+      <img src="assets/logo.png" alt="Systema Energia Elétrica e Solar" class="hero-logo reveal-up">
+      <h1 class="hero-title reveal-up">Economia de energia<br> começa no <span class="text-accent">projeto certo</span>.</h1>
+      <p class="hero-sub reveal-up">Engenharia elétrica, civil e energia solar sob um só teto. Mais de
+        <strong>20 mil painéis instalados</strong> e <strong>350 clientes</strong> que pararam de
+        pagar conta de luz cara.</p>
+      <div class="hero-actions reveal-up">
+        <a href="#contato" class="btn btn-primary btn-glow"><span class="btn-label">Solicitar orçamento</span></a>
+        <a href="https://api.whatsapp.com/send?phone=5519971270736" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 2.667c-7.36 0-13.333 5.973-13.333 13.333 0 2.6.74 5.027 2.04 7.107l-1.347 4.92 5.04-1.32c2 .987 4.267 1.547 6.6 1.547h.006c7.36 0 13.327-5.973 13.327-13.333 0-3.56-1.387-6.907-3.907-9.427-2.52-2.527-5.867-3.84-9.426-3.827zm7.78 19.013c-.327.92-1.92 1.76-2.64 1.867-.68.107-1.547.147-2.494-.16-.574-.187-1.307-.427-2.254-.84-3.96-1.707-6.547-5.667-6.747-5.933-.2-.267-1.627-2.16-1.627-4.12 0-1.96 1.027-2.92 1.387-3.32.36-.4.787-.493 1.054-.493.267 0 .533.003.767.013.247.013.58-.093.907.693.333.8 1.133 2.76 1.234 2.96.1.2.166.434.033.694-.133.26-.2.42-.4.647-.2.227-.42.507-.6.68-.2.193-.407.4-.174.787.233.387 1.04 1.707 2.227 2.76 1.527 1.36 2.814 1.78 3.214 1.98.4.2.633.173.867-.067.233-.24.994-1.16 1.26-1.56.267-.4.533-.333.894-.2.36.133 2.307 1.087 2.7 1.287.394.2.654.3.754.467.1.167.1.96-.227 1.88z"/></svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint reveal-up">
+      <span></span>
+      role pra ver mais
+    </div>
+  </section>
+
+  <!-- Stats / Sobre: carrossel infinito -->
+  <section class="stats-marquee" id="sobre">
+    <div class="marquee">
+      <div class="marquee-track" id="marquee-track">
+        <span>☀️ +20.000 painéis instalados</span>
+        <span>🤝 +350 clientes atendidos</span>
+        <span>📍 2 unidades em Aguaí e São João da Boa Vista</span>
+        <span>⚡ Engenharia civil, elétrica e solar</span>
+        <span>☀️ +20.000 painéis instalados</span>
+        <span>🤝 +350 clientes atendidos</span>
+        <span>📍 2 unidades em Aguaí e São João da Boa Vista</span>
+        <span>⚡ Engenharia civil, elétrica e solar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quem Somos -->
+  <section class="about section-light" id="quem-somos">
+    <div class="container about-inner">
+      <div class="about-text reveal-up">
+        <p class="eyebrow eyebrow-dark">Quem somos</p>
+        <h2 class="section-title text-dark">Uma equipe que entende de energia elétrica, solar e civil.</h2>
+        <p class="text-dark-sub">A Systema nasceu em Aguaí/SP com um objetivo simples: tirar o peso da
+          conta de luz das costas de quem trabalha duro pra pagar ela. Hoje, com unidades em Aguaí e
+          São João da Boa Vista, somos um time de engenheiros e técnicos que cuida de cada etapa, da
+          fundação ao painel solar, sem precisar terceirizar nada.</p>
+      </div>
+      <div class="about-stats">
+        <div class="about-stat reveal-up">
+          <span class="about-stat-number">20.000+</span>
+          <p>painéis instalados</p>
+        </div>
+        <div class="about-stat reveal-up">
+          <span class="about-stat-number">350+</span>
+          <p>clientes atendidos</p>
+        </div>
+        <div class="about-stat reveal-up">
+          <span class="about-stat-number">2</span>
+          <p>unidades próprias em SP</p>
+        </div>
+        <div class="about-stat reveal-up">
+          <span class="about-stat-number">3 em 1</span>
+          <p>engenharia civil, elétrica e solar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="services section-darker shape-bg-section" id="servicos">
+    <canvas class="shapegrid-canvas"></canvas>
+    <div class="container">
+      <p class="eyebrow reveal-up">O que fazemos</p>
+      <h2 class="section-title reveal-up">Tudo que sua instalação precisa, em um lugar só.</h2>
+
+      <div class="services-grid">
+        <article class="service-card reveal-up">
+          <div class="service-image"><img src="assets/servico-energia-solar.jpg" alt="Energia Solar" loading="lazy"></div>
+          <h3>Energia Solar</h3>
+          <p>Projeto, dimensionamento, instalação e manutenção de sistemas fotovoltaicos residenciais,
+            comerciais e rurais.</p>
+        </article>
+        <article class="service-card reveal-up">
+          <div class="service-image"><img src="assets/servico-engenharia-eletrica.jpg" alt="Engenharia Elétrica" loading="lazy"></div>
+          <h3>Engenharia Elétrica</h3>
+          <p>Projetos elétricos, laudos técnicos e adequações dentro da norma, com responsabilidade
+            técnica assinada.</p>
+        </article>
+        <article class="service-card reveal-up">
+          <div class="service-image"><img src="assets/servico-engenharia-civil.jpg" alt="Engenharia Civil" loading="lazy"></div>
+          <h3>Engenharia Civil</h3>
+          <p>Estrutura e infraestrutura preparadas com segurança pra suportar a instalação solar e
+            elétrica.</p>
+        </article>
+        <article class="service-card reveal-up">
+          <div class="service-image"><img src="assets/servico-eventos.webp" alt="Estrutura elétrica para eventos" loading="lazy"></div>
+          <h3>Eventos</h3>
+          <p>Estrutura elétrica temporária para eventos e obras, com instalação rápida e segura.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculadora de economia -->
+  <section class="calculator section-accent" id="calculadora">
+    <img src="assets/3d-solar-panel.png" alt="" class="calc-3d-icon calc-3d-icon-mobile" aria-hidden="true">
+    <div class="container calculator-inner">
+      <img src="assets/3d-solar-panel.png" alt="" class="calc-3d-icon calc-3d-icon-desktop" aria-hidden="true">
+      <div class="calculator-text reveal-up">
+        <p class="eyebrow eyebrow-dark">Diferencial</p>
+        <h2 class="section-title text-dark">Descubra quanto você pode economizar com Energia Solar</h2>
+        <p class="text-dark-sub">Informe o valor médio da sua conta de energia e veja sua economia
+          estimada.</p>
+      </div>
+
+      <div class="calculator-card reveal-up">
+        <label class="calc-label" for="calc-bill">Valor médio da conta de energia mensal (R$)</label>
+        <div class="calc-input-wrap">
+          <span>R$</span>
+          <input type="number" id="calc-bill" placeholder="Ex: 350" min="0" step="10">
+        </div>
+        <button type="button" class="btn btn-primary btn-glow full" id="calc-submit"><span class="btn-label">Calcular Economia</span></button>
+        <div class="calc-loading" id="calc-loading">
+          <p>Calculando sua economia...</p>
+          <div class="calc-progress-track"><div class="calc-progress-fill" id="calc-progress-fill"></div></div>
+        </div>
+        <p class="calc-disclaimer">Os valores apresentados são estimativas e podem variar de acordo com o consumo, região, incidência solar e dimensionamento do sistema.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup de resultado da calculadora -->
+  <div class="modal-overlay" id="calc-modal">
+    <div class="modal-card modal-card-results">
+      <button type="button" class="modal-close" id="calc-modal-close" aria-label="Fechar">&times;</button>
+      <p class="eyebrow eyebrow-dark">Resultado da simulação</p>
+
+      <div class="modal-hero">
+        <span class="modal-hero-label">Economia anual estimada</span>
+        <span class="modal-value" id="calc-result-yearly">R$ 0</span>
+      </div>
+
+      <div class="modal-progress">
+        <div class="modal-progress-track"><div class="modal-progress-fill" id="calc-progress-result"></div></div>
+        <span class="modal-progress-label"><strong id="calc-result-percent">90%</strong> de redução no custo de energia</span>
+      </div>
+
+      <div class="modal-grid">
+        <div class="modal-stat">
+          <span class="modal-stat-label">Gasto atual mensal</span>
+          <span class="modal-stat-value" id="calc-result-current">R$ 0</span>
+        </div>
+        <div class="modal-stat">
+          <span class="modal-stat-label">Economia mensal</span>
+          <span class="modal-stat-value modal-stat-accent" id="calc-result-monthly">R$ 0</span>
+        </div>
+        <div class="modal-stat">
+          <span class="modal-stat-label">Novo custo mensal</span>
+          <span class="modal-stat-value" id="calc-result-newcost">R$ 0</span>
+        </div>
+        <div class="modal-stat">
+          <span class="modal-stat-label">Economia em 5 anos</span>
+          <span class="modal-stat-value" id="calc-result-5y">R$ 0</span>
+        </div>
+        <div class="modal-stat modal-stat-full">
+          <span class="modal-stat-label">Economia em 10 anos</span>
+          <span class="modal-stat-value modal-stat-accent" id="calc-result-10y">R$ 0</span>
+        </div>
+      </div>
+
+      <p class="modal-disclaimer">Os valores apresentados são estimativas e podem variar de acordo com o
+        consumo, região, incidência solar e dimensionamento do sistema.</p>
+
+      <a href="#" id="calc-modal-cta" target="_blank" rel="noopener" class="btn btn-whatsapp full">
+        <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 2.667c-7.36 0-13.333 5.973-13.333 13.333 0 2.6.74 5.027 2.04 7.107l-1.347 4.92 5.04-1.32c2 .987 4.267 1.547 6.6 1.547h.006c7.36 0 13.327-5.973 13.327-13.333 0-3.56-1.387-6.907-3.907-9.427-2.52-2.527-5.867-3.84-9.426-3.827zm7.78 19.013c-.327.92-1.92 1.76-2.64 1.867-.68.107-1.547.147-2.494-.16-.574-.187-1.307-.427-2.254-.84-3.96-1.707-6.547-5.667-6.747-5.933-.2-.267-1.627-2.16-1.627-4.12 0-1.96 1.027-2.92 1.387-3.32.36-.4.787-.493 1.054-.493.267 0 .533.003.767.013.247.013.58-.093.907.693.333.8 1.133 2.76 1.234 2.96.1.2.166.434.033.694-.133.26-.2.42-.4.647-.2.227-.42.507-.6.68-.2.193-.407.4-.174.787.233.387 1.04 1.707 2.227 2.76 1.527 1.36 2.814 1.78 3.214 1.98.4.2.633.173.867-.067.233-.24.994-1.16 1.26-1.56.267-.4.533-.333.894-.2.36.133 2.307 1.087 2.7 1.287.394.2.654.3.754.467.1.167.1.96-.227 1.88z"/></svg>
+        Quero meu orçamento
+      </a>
+    </div>
+  </div>
+
+  <!-- Resultados / Galeria -->
+  <section class="gallery section-light" id="resultados">
+    <div class="container">
+      <p class="eyebrow reveal-up">Resultados</p>
+      <h2 class="section-title reveal-up">Projetos entregues por todo SP.</h2>
+      <p class="section-sub reveal-up">Instalações reais feitas pela nossa equipe.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-up">
+          <img src="assets/resultado-1.jpg" alt="Instalação solar - Condomínio Vila Real, Campinas/SP" loading="lazy">
+          <span class="gallery-caption">Condomínio Vila Real — Campinas/SP</span>
+        </div>
+        <div class="gallery-item reveal-up">
+          <img src="assets/resultado-2.jpg" alt="Instalação solar - Residencial Jardins do Lago, Ribeirão Preto/SP" loading="lazy">
+          <span class="gallery-caption">Residencial Jardins do Lago — Ribeirão Preto/SP</span>
+        </div>
+        <div class="gallery-item reveal-up">
+          <img src="assets/resultado-3.jpg" alt="Instalação solar - Condomínio Reserva Verde, São José dos Campos/SP" loading="lazy">
+          <span class="gallery-caption">Condomínio Reserva Verde — São José dos Campos/SP</span>
+        </div>
+        <div class="gallery-item reveal-up">
+          <img src="assets/resultado-4.jpg" alt="Instalação solar - Residencial Bosque das Flores, Sorocaba/SP" loading="lazy">
+          <span class="gallery-caption">Residencial Bosque das Flores — Sorocaba/SP</span>
+        </div>
+        <div class="gallery-item reveal-up">
+          <img src="assets/resultado-5.jpg" alt="Instalação solar - Condomínio Villa Bella, Piracicaba/SP" loading="lazy">
+          <span class="gallery-caption">Condomínio Villa Bella — Piracicaba/SP</span>
+        </div>
+        <div class="gallery-item reveal-up">
+          <img src="assets/resultado-6.png" alt="Instalação solar - Residencial Recanto das Águas, São João da Boa Vista/SP" loading="lazy">
+          <span class="gallery-caption">Residencial Recanto das Águas — São João da Boa Vista/SP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de contato -->
+  <section class="contact-form section-accent" id="contato">
+    <div class="container contact-inner">
+      <div class="contact-text reveal-up">
+        <p class="eyebrow eyebrow-dark">Vamos conversar</p>
+        <h2 class="section-title text-dark">Quer parar de pagar conta de luz cara?</h2>
+        <p class="text-dark-sub">Preenche o formulário com os seus dados que nosso time retorna com uma
+          proposta sob medida.</p>
+      </div>
+
+      <form class="form-card reveal-up" id="contact-form">
+        <label>
+          Nome
+          <input type="text" name="nome" placeholder="Seu nome completo" required>
+        </label>
+        <label>
+          WhatsApp
+          <input type="tel" name="telefone" placeholder="(19) 99999-9999" required>
+        </label>
+        <label>
+          Cidade
+          <input type="text" name="cidade" placeholder="Onde fica o imóvel">
+        </label>
+        <label>
+          Tipo de imóvel
+          <select name="tipo">
+            <option value="residencial">Residencial</option>
+            <option value="comercial">Comercial</option>
+            <option value="rural">Rural</option>
+          </select>
+        </label>
+        <label class="full">
+          Mensagem
+          <textarea name="mensagem" rows="3" placeholder="Conta um pouco do que você precisa"></textarea>
+        </label>
+        <button type="submit" class="btn btn-dark btn-glow full"><span class="btn-label">Quero minha proposta</span></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section-darker shape-bg-section" id="faq">
+    <canvas class="shapegrid-canvas"></canvas>
+    <div class="container">
+      <p class="eyebrow reveal-up">Dúvidas</p>
+      <h2 class="section-title reveal-up">Perguntas frequentes</h2>
+
+      <div class="faq-list">
+        <details class="faq-item reveal-up">
+          <summary>Quanto tempo demora pra instalar o sistema solar?</summary>
+          <p>Depois da aprovação do projeto e da chegada dos materiais, a instalação em si leva de 1 a 3
+            dias. O prazo total (projeto + aprovação na concessionária + instalação) varia conforme a
+            cidade e o tamanho do sistema.</p>
+        </details>
+        <details class="faq-item reveal-up">
+          <summary>A energia solar funciona em dia nublado ou à noite?</summary>
+          <p>Sim. Em dias nublados o sistema continua gerando energia, só que com eficiência reduzida.
+            À noite, quem garante o fornecimento é a rede elétrica convencional, e o sistema é
+            dimensionado considerando essa compensação.</p>
+        </details>
+        <details class="faq-item reveal-up">
+          <summary>Preciso trocar o padrão de entrada de energia da minha casa?</summary>
+          <p>Depende da potência do sistema e do padrão atual. Isso é avaliado na visita técnica e, se
+            precisar trocar, a Systema cuida de toda a parte de engenharia elétrica e civil.</p>
+        </details>
+        <details class="faq-item reveal-up">
+          <summary>Os equipamentos têm garantia?</summary>
+          <p>Sim. Painéis e inversores têm garantia de fábrica (geralmente entre 10 e 25 anos, conforme
+            o fabricante), além da garantia da nossa instalação.</p>
+        </details>
+        <details class="faq-item reveal-up">
+          <summary>Vocês atendem residencial, comercial e rural?</summary>
+          <p>Sim, atendemos os três perfis, com projetos dimensionados conforme o consumo e a estrutura
+            de cada tipo de imóvel.</p>
+        </details>
+        <details class="faq-item reveal-up">
+          <summary>Vocês atendem só Aguaí e São João da Boa Vista?</summary>
+          <p>Essas são nossas unidades físicas, mas atendemos a região ao redor. Fala com a gente pelo
+            WhatsApp pra confirmar se atendemos sua cidade.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section class="location section-darker shape-bg-section" id="localizacao">
+    <canvas class="shapegrid-canvas"></canvas>
+    <div class="container">
+      <p class="eyebrow reveal-up">Onde estamos</p>
+      <h2 class="section-title reveal-up">Duas unidades pra te atender.</h2>
+
+      <div class="location-grid">
+        <div class="location-card reveal-up">
+          <div class="location-icon">🏢</div>
+          <h3>Escritório</h3>
+          <p>Aguaí / SP</p>
+        </div>
+        <div class="location-card reveal-up">
+          <div class="location-icon">🏬</div>
+          <h3>Loja</h3>
+          <p>Av. Dr. Oscar Piraja Piraja Martins, 1473<br>São João da Boa Vista / SP</p>
+        </div>
+        <div class="location-card location-card-accent reveal-up">
+          <div class="location-icon">💬</div>
+          <h3>WhatsApp</h3>
+          <p><a href="https://api.whatsapp.com/send?phone=5519971270736" target="_blank" rel="noopener">(19) 97127-0736</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img src="assets/logo.png" alt="Systema Energia Elétrica e Solar" class="footer-logo">
+    <nav class="footer-nav">
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#faq">FAQ</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+    <a href="https://www.instagram.com/systemaenergiaeletricaesolar" target="_blank" rel="noopener" class="btn btn-instagram">
+      <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.06 2.16.27 2.91.56a5.84 5.84 0 0 1 2.13 1.38 5.84 5.84 0 0 1 1.38 2.13c.29.75.5 1.74.56 2.91.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.06 1.17-.27 2.16-.56 2.91a5.84 5.84 0 0 1-1.38 2.13 5.84 5.84 0 0 1-2.13 1.38c-.75.29-1.74.5-2.91.56-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.06-2.16-.27-2.91-.56a5.84 5.84 0 0 1-2.13-1.38 5.84 5.84 0 0 1-1.38-2.13c-.29-.75-.5-1.74-.56-2.91C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.06-1.17.27-2.16.56-2.91a5.84 5.84 0 0 1 1.38-2.13A5.84 5.84 0 0 1 6.34 .73c.75-.29 1.74-.5 2.91-.56C10.5 2.2 10.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.52 0-4.76.07-1 .05-1.7.21-2.27.43a4.04 4.04 0 0 0-1.46.95 4.04 4.04 0 0 0-.95 1.46c-.22.57-.38 1.27-.43 2.27C2.06 10.2 2.06 10.57 2.06 12s0 1.8.07 3.04c.05 1 .21 1.7.43 2.27.2.51.46.93.95 1.46.49.49.91.75 1.46.95.57.22 1.27.38 2.27.43 1.24.06 1.61.07 4.76.07s3.52 0 4.76-.07c1-.05 1.7-.21 2.27-.43a4.04 4.04 0 0 0 1.46-.95 4.04 4.04 0 0 0 .95-1.46c.22-.57.38-1.27.43-2.27.06-1.24.07-1.61.07-3.04s0-1.8-.07-3.04c-.05-1-.21-1.7-.43-2.27a4.04 4.04 0 0 0-.95-1.46 4.04 4.04 0 0 0-1.46-.95c-.57-.22-1.27-.38-2.27-.43C15.52 4 15.15 4 12 4Zm0 3.6a4.4 4.4 0 1 1 0 8.8 4.4 4.4 0 0 1 0-8.8Zm0 1.8a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2Zm5.6-2.45a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0Z"/></svg>
+      @systemaenergiaeletricaesolar
+    </a>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> Systema Energia Elétrica e Solar. Todos os direitos reservados.</p>
+    <p class="footer-credit">Site por Gvdesiigner</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="js/shapegrid.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
