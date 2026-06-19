@@ -83,18 +83,6 @@ document.querySelectorAll('.shape-bg-section .shapegrid-canvas').forEach((canvas
   });
 });
 
-/* ---------- Header: esconder/mostrar conforme o scroll ---------- */
-let lastScroll = 0;
-lenis.on('scroll', ({ scroll }) => {
-  const header = document.getElementById('header');
-  if (scroll > 120 && scroll > lastScroll) {
-    header.style.transform = 'translateY(-100%)';
-  } else {
-    header.style.transform = 'translateY(0)';
-  }
-  lastScroll = scroll;
-});
-
 /* ---------- Menu mobile ---------- */
 const menuToggle = document.getElementById('menu-toggle');
 const mainNav = document.querySelector('.main-nav');
@@ -142,7 +130,7 @@ calcSubmitBtn.addEventListener('click', () => {
     document.getElementById('calc-result-10y').textContent = currencyFmt(savings10y);
 
     const msg = `Olá! Fiz a simulação no site: minha conta de luz é de ${currencyFmt(bill)} e eu economizaria cerca de ${currencyFmt(monthlySavings)} por mês com energia solar. Quero um orçamento.`;
-    calcModalCta.href = `https://api.whatsapp.com/send?phone=5519971270736&text=${encodeURIComponent(msg)}`;
+    calcModalCta.href = `https://api.whatsapp.com/send?phone=5511998765432&text=${encodeURIComponent(msg)}`;
 
     calcModal.classList.add('open');
     calcLoading.classList.remove('active');
@@ -169,5 +157,5 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
   const nome = form.nome.value;
   const telefone = form.telefone.value;
   const msg = `Olá! Me chamo ${nome} e quero uma proposta de energia solar. WhatsApp: ${telefone}`;
-  window.open(`https://api.whatsapp.com/send?phone=5519971270736&text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://api.whatsapp.com/send?phone=5511998765432&text=${encodeURIComponent(msg)}`, '_blank');
 });
